@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ElgoByte Marketing</string>
+
+    <string-array name="type">
+        <item>Pizza</item>
+        <item>Restaurant</item>
+        <item>Shop</item>
+    </string-array>
+
+    <string name="facebook_app_id">582508465902028</string>
+    <string name="facebook_login_protocol_schema">fb582508465902028</string>
+
+
+</resources>
