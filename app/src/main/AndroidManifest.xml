@@ -22,19 +22,23 @@
         <activity android:name=".Home" />
         <activity android:name=".SignUp" />
         <activity android:name=".NetWorkConnect" />
-        <activity android:name=".Splash_Screen">
+
+        <activity android:name=".Splash_Screen"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".Login" />
         <activity android:name=".MainActivity" />
 
         <service
             android:name=".MyFirebaseMessageRecevier"
-            tools:ignore="ExportedService">
+            tools:ignore="ExportedService"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
@@ -50,8 +54,7 @@
 
         <activity android:name="com.facebook.FacebookActivity"
             android:configChanges=
-                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:label="@string/app_name" />
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation" />
 
         <activity
             android:name="com.facebook.CustomTabActivity"

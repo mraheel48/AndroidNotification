@@ -8,12 +8,8 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.widget.ImageView;
-import android.widget.Toast;
-
 import com.google.firebase.firestore.FirebaseFirestore;
 
-import java.util.HashMap;
-import java.util.Map;
 
 public class Splash_Screen extends AppCompatActivity {
 
@@ -34,7 +30,7 @@ public class Splash_Screen extends AppCompatActivity {
             tvUserNameId = getIntent().getStringExtra("click");
         }
 
-        Toast.makeText(this, tvUserNameId, Toast.LENGTH_LONG).show();
+//        Toast.makeText(this, tvUserNameId, Toast.LENGTH_LONG).show();
 
         Thread thread = new Thread() {
 
